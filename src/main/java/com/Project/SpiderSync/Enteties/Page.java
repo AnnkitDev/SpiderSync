@@ -21,6 +21,9 @@ public class Page {
     @Column(nullable = false, unique = true, length = 768)
     private String url;
 
+    @Column(nullable = false, unique = true)
+    private String title;
+
     @Lob
     @Column(columnDefinition = "MEDIUMTEXT")
     private String content;

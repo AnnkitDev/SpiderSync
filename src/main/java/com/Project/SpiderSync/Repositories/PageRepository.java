@@ -9,14 +9,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public  interface PageRepository extends JpaRepository<Page, Long> {
+public interface PageRepository extends JpaRepository<Page, Long> {
 
-    @Query(value = "SELECT * FROM pages WHERE MATCH(content) AGAINST (:keyword IN NATURAL LANGUAGE MODE",
-    nativeQuery = true)
-    List<Page> search(@Param("Keyword") String keyword);
+    // Fix: Added the missing closing parenthesis ')' after AGAINST (:keyword)
+    @Query(value = "SELECT * FROM pages WHERE MATCH(content) AGAINST (:keyword IN NATURAL LANGUAGE MODE)",
+            nativeQuery = true)
+    List<Page> search(@Param("keyword") String keyword);
 
-
-    boolean existByUrl(String url);
-
-    }
-
+    // Fix: Using the standard Spring naming 'existsByUrl' and removed the duplicate
+    boolean existsByUrl(String url);
+}
