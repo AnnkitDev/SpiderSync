@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiderSync - Professional Search Engine</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">🕷️ SpiderSync</h1>
+            <p class="tagline">Professional High-End Search Engine</p>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search the web..." 
+                        autocomplete="off"
+                    />
+                    <button id="searchBtn" class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+
+            <div class="filters">
+                <select id="languageFilter">
+                    <option value="">All Languages</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
+
+            <div id="results" class="results"></div>
+            
+            <div id="stats" class="stats"></div>
+        </main>
+
+        <footer>
+            <p>Powered by Elasticsearch, Redis & Spring Boot | <a href="/swagger-ui.html">API Documentation</a></p>
+        </footer>
+    </div>
+
+    <script src="/js/search.js"></script>
+</body>
+</html>
