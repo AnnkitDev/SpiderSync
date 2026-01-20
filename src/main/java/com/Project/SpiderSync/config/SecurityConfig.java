@@ -38,7 +38,7 @@ public class SecurityConfig {
                 .cors(cors -> cors.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/", "/index.html", "/static/**", "/css/**", "/js/**", "/api/auth/**",
-                                "/api-docs/**", "/swagger-ui/**", "/v3/api-docs/**", "/actuator/**")
+                                "/api/search/**", "/api-docs/**", "/swagger-ui/**", "/v3/api-docs/**", "/actuator/**")
                         .permitAll()
                         .requestMatchers("/api/admin/**", "/api/crawl/**").hasRole("ADMIN")
                         .anyRequest().authenticated())
