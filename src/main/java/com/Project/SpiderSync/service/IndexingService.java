@@ -1,7 +1,7 @@
 package com.Project.SpiderSync.service;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
-import co.elastic.clients.elasticsearch._types.mapping.*;
+import co.elastic.clients.elasticsearch._types.mapping.Property;
 import co.elastic.clients.elasticsearch.core.BulkRequest;
 import co.elastic.clients.elasticsearch.core.BulkResponse;
 import co.elastic.clients.elasticsearch.core.IndexResponse;
@@ -10,8 +10,8 @@ import co.elastic.clients.elasticsearch.indices.CreateIndexResponse;
 import co.elastic.clients.elasticsearch.indices.ExistsRequest;
 import com.Project.SpiderSync.entities.Page;
 import com.Project.SpiderSync.search.PageDocument;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -20,11 +20,15 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
-@Slf4j
 public class IndexingService {
 
+  private static final Logger log = LoggerFactory.getLogger(IndexingService.class);
+
   private final ElasticsearchClient elasticsearchClient;
+
+  public IndexingService(ElasticsearchClient elasticsearchClient) {
+    this.elasticsearchClient = elasticsearchClient;
+  }
 
   @Value("${elasticsearch.index.pages:search_pages}")
   private String indexName;
@@ -39,7 +43,7 @@ public class IndexingService {
           .value();
 
       if (!exists) {
-        CreateIndexResponse response = elasticsearchClient.indices().create(c -> c
+        elasticsearchClient.indices().create(c -> c
             .index(indexName)
             .mappings(m -> m
                 .properties("id", Property.of(p -> p.long_(l -> l)))

@@ -1,14 +1,16 @@
 package com.Project.SpiderSync.nlp;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-@Slf4j
 public class KeywordExtractor {
+
+  private static final Logger log = LoggerFactory.getLogger(KeywordExtractor.class);
 
   private static final Set<String> STOP_WORDS = new HashSet<>(Arrays.asList(
       "a", "an", "and", "are", "as", "at", "be", "by", "for", "from",

@@ -9,19 +9,22 @@ import com.Project.SpiderSync.service.SearchService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/search")
-@RequiredArgsConstructor
 @Tag(name = "Search", description = "Advanced search endpoints")
 public class SearchController {
 
   private final SearchService searchService;
   private final SearchQueryRepository searchQueryRepository;
+
+  public SearchController(SearchService searchService, SearchQueryRepository searchQueryRepository) {
+    this.searchService = searchService;
+    this.searchQueryRepository = searchQueryRepository;
+  }
 
   @GetMapping
   @Operation(summary = "Search pages", description = "Search indexed pages with optional filters")

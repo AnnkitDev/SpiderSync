@@ -2,12 +2,12 @@ package com.Project.SpiderSync.service;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch._types.query_dsl.Query;
-import co.elastic.clients.elasticsearch.core.*;
+import co.elastic.clients.elasticsearch.core.CountResponse;
+import co.elastic.clients.elasticsearch.core.SearchResponse;
 import co.elastic.clients.elasticsearch.core.search.Hit;
-import com.Project.SpiderSync.entities.Page;
 import com.Project.SpiderSync.search.PageDocument;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -18,11 +18,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
-@Slf4j
 public class SearchService {
 
+  private static final Logger log = LoggerFactory.getLogger(SearchService.class);
+
   private final ElasticsearchClient elasticsearchClient;
+
+  public SearchService(ElasticsearchClient elasticsearchClient) {
+    this.elasticsearchClient = elasticsearchClient;
+  }
 
   @Value("${elasticsearch.index.pages:search_pages}")
   private String indexName;

@@ -44,7 +44,12 @@ async function performSearch() {
     
     const language = languageFilter.value;
     
-    resultsDiv.innerHTML = '<div class="loading">Searching</div>';
+    resultsDiv.innerHTML = `
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <span>Searching high-end sources</span>
+        </div>
+    `;
     suggestionsDiv.classList.remove('active');
     
     try {
@@ -52,11 +57,12 @@ async function performSearch() {
         if (language) params.append('language', language);
         
         const response = await fetch(`/api/search?${params}`);
+        if (!response.ok) throw new Error('Search failed');
         const data = await response.json();
         
         displayResults(data);
     } catch (error) {
-        resultsDiv.innerHTML = '<div class="loading">Error performing search. Please try again.</div>';
+        resultsDiv.innerHTML = '<div class="loading"><span>Error performing search. Please try again.</span></div>';
         console.error('Search error:', error);
     }
 }

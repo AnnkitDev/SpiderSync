@@ -7,7 +7,6 @@ import com.Project.SpiderSync.service.PageService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +18,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/crawl")
-@RequiredArgsConstructor
 @PreAuthorize("hasRole('ADMIN')")
 @SecurityRequirement(name = "Bearer Authentication")
 @Tag(name = "Crawl Management", description = "Crawl job management endpoints (Admin only)")
@@ -28,6 +26,13 @@ public class CrawlController {
   private final PageService pageService;
   private final CrawlJobRepository crawlJobRepository;
   private final IndexingService indexingService;
+
+  public CrawlController(PageService pageService, CrawlJobRepository crawlJobRepository,
+      IndexingService indexingService) {
+    this.pageService = pageService;
+    this.crawlJobRepository = crawlJobRepository;
+    this.indexingService = indexingService;
+  }
 
   @PostMapping("/start")
   @Operation(summary = "Start new crawl job", description = "Initiate a new crawl job from seed URL")

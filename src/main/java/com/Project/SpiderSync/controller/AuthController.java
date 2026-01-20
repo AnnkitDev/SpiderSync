@@ -5,7 +5,6 @@ import com.Project.SpiderSync.dto.LoginRequest;
 import com.Project.SpiderSync.security.JwtService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,12 +17,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/auth")
-@RequiredArgsConstructor
 @Tag(name = "Authentication", description = "Authentication and login endpoints")
 public class AuthController {
 
   private final AuthenticationManager authenticationManager;
   private final JwtService jwtService;
+
+  public AuthController(AuthenticationManager authenticationManager, JwtService jwtService) {
+    this.authenticationManager = authenticationManager;
+    this.jwtService = jwtService;
+  }
 
   @PostMapping("/login")
   @Operation(summary = "Login", description = "Authenticate user and return JWT token")

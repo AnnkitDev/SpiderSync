@@ -1,6 +1,7 @@
 package com.Project.SpiderSync.crawler;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -11,8 +12,9 @@ import java.net.URL;
 import java.util.*;
 
 @Service
-@Slf4j
 public class RobotsTxtService {
+
+  private static final Logger log = LoggerFactory.getLogger(RobotsTxtService.class);
 
   private static final String USER_AGENT = "SpiderSync";
 

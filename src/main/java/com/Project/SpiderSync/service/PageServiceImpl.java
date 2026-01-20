@@ -5,12 +5,13 @@ import com.Project.SpiderSync.repositories.PageRepository;
 import com.Project.SpiderSync.crawler.ContentExtractor;
 import com.Project.SpiderSync.crawler.RobotsTxtService;
 import com.Project.SpiderSync.nlp.KeywordExtractor;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
@@ -24,8 +25,9 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-@Slf4j
 public class PageServiceImpl implements PageService {
+
+    private static final Logger log = LoggerFactory.getLogger(PageServiceImpl.class);
 
     @Autowired
     private PageRepository pageRepository;
