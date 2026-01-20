@@ -1,7 +1,7 @@
 package com.Project.SpiderSync.service;
 
-import com.Project.SpiderSync.Enteties.Page;
-import com.Project.SpiderSync.Repositories.PageRepository;
+import com.Project.SpiderSync.entities.Page;
+import com.Project.SpiderSync.repositories.PageRepository;
 import com.Project.SpiderSync.crawler.ContentExtractor;
 import com.Project.SpiderSync.crawler.RobotsTxtService;
 import com.Project.SpiderSync.nlp.KeywordExtractor;

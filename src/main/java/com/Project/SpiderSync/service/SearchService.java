@@ -4,7 +4,7 @@ import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch._types.query_dsl.Query;
 import co.elastic.clients.elasticsearch.core.*;
 import co.elastic.clients.elasticsearch.core.search.Hit;
-import com.Project.SpiderSync.Enteties.Page;
+import com.Project.SpiderSync.entities.Page;
 import com.Project.SpiderSync.search.PageDocument;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -58,34 +58,31 @@ public class SearchService {
   }
 
   /**
-     * Autocomplete suggestions
-     */
-    @Cacheable(value = "search-results", key = "'autocomplete-' + #prefix")
-    public List<String> autocomplete(String prefix, int size) {
-        try {
-            SearchResponse<PageDocument> response = elasticsearchClient.search(s -> s
-                    .index(indexName)
-                    .query(q -> q
-                        .matchPhrasePrefixquery -> query
-                            .field("title")
-                            .query(prefix)
-                        )
-                    )
-                    .size(size)
-                    .source(src -> src.filter(f -> f.includes("title"))),
-                PageDocument.class
-            );
+   * Autocomplete suggestions
+   */
+  @Cacheable(value = "search-results", key = "'autocomplete-' + #prefix")
+  public List<String> autocomplete(String prefix, int size) {
+    try {
+      SearchResponse<PageDocument> response = elasticsearchClient.search(s -> s
+          .index(indexName)
+          .query(q -> q
+              .matchPhrasePrefix(mpp -> mpp
+                  .field("title")
+                  .query(prefix)))
+          .size(size)
+          .source(src -> src.filter(f -> f.includes("title"))),
+          PageDocument.class);
 
-            return response.hits().hits().stream()
-                    .map(hit -> hit.source().getTitle())
-                    .distinct()
-                    .collect(Collectors.toList());
+      return response.hits().hits().stream()
+          .map(hit -> hit.source().getTitle())
+          .distinct()
+          .collect(Collectors.toList());
 
-        } catch (IOException e) {
-            log.error("Error in autocomplete: {}", e.getMessage());
-            return new ArrayList<>();
-        }
+    } catch (IOException e) {
+      log.error("Error in autocomplete: {}", e.getMessage());
+      return new ArrayList<>();
     }
+  }
 
   /**
    * Search with filters
@@ -113,7 +110,7 @@ public class SearchService {
         mustQueries.add(Query.of(q -> q
             .range(r -> r
                 .field("page_rank")
-                .gte(com.fasterxml.jackson.databind.JsonNode.valueOf(minPageRank)))));
+                .gte(co.elastic.clients.json.JsonData.of(minPageRank)))));
       }
 
       SearchResponse<PageDocument> response = elasticsearchClient.search(s -> s

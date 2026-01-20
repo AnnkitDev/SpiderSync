@@ -8,6 +8,7 @@ import java.util.List;
 
 @Repository
 public interface CrawlJobRepository extends JpaRepository<CrawlJob, Long> {
-    List<CrawlJob> findByStatusOrderByCreatedAtDesc(CrawlJob.CrawlStatus status);
-    List<CrawlJob> findTop10ByOrderByCreatedAtDesc();
+  List<CrawlJob> findByStatusOrderByCreatedAtDesc(CrawlJob.CrawlStatus status);
+
+  List<CrawlJob> findTop10ByOrderByCreatedAtDesc();
 }
