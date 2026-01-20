@@ -1,0 +1,29 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.SpiderSync:SpiderSync >----------------------
+[INFO] Building SpiderSync 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.1:run (default-cli) > test-compile @ SpiderSync >>>
+Downloading from central: https://repo.maven.apache.org/maven2/co/elastic/clients/elasticsearch-java/8.15.3/elasticsearch-java-8.15.3.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.850 s
+[INFO] Finished at: 2026-01-20T15:46:10+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project SpiderSync: Could not collect dependencies for project com.SpiderSync:SpiderSync:jar:0.0.1-SNAPSHOT
+[ERROR] Failed to read artifact descriptor for co.elastic.clients:elasticsearch-java:jar:8.15.3
+[ERROR] 	Caused by: The following artifacts could not be resolved: co.elastic.clients:elasticsearch-java:pom:8.15.3 (absent): Could not transfer artifact co.elastic.clients:elasticsearch-java:pom:8.15.3 from/to central (https://repo.maven.apache.org/maven2): No route to host: getsockopt
+[ERROR] Failed to read artifact descriptor for org.jsoup:jsoup:jar:1.17.2
+[ERROR] 	Caused by: The following artifacts could not be resolved: org.jsoup:jsoup:pom:1.17.2 (absent): Could not transfer artifact org.jsoup:jsoup:pom:1.17.2 from/to central (https://repo.maven.apache.org/maven2): No route to host: getsockopt
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
