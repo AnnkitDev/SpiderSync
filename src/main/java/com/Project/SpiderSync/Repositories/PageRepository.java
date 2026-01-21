@@ -11,9 +11,10 @@ import java.util.List;
 @Repository
 public interface PageRepository extends JpaRepository<Page, Long> {
 
-    @Query(value = "SELECT * FROM pages WHERE MATCH(content) AGAINST (:keyword IN NATURAL LANGUAGE MODE)",
-            nativeQuery = true)
+    @Query(value = "SELECT * FROM pages WHERE MATCH(content) AGAINST (:keyword IN NATURAL LANGUAGE MODE)", nativeQuery = true)
     List<Page> search(@Param("keyword") String keyword);
 
     boolean existsByUrl(String url);
+
+    List<Page> findByUrlIn(List<String> urls);
 }
