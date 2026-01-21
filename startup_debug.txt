@@ -12,13 +12,17 @@
 [INFO] Copying 4 resources from src\main\resources to target\classes
 [INFO] 
 [INFO] --- compiler:3.13.0:compile (default-compile) @ SpiderSync ---
-[INFO] Nothing to compile - all classes are up to date.
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 37 source files with javac [debug parameters release 21] to target\classes
+[INFO] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/crawler/RobotsTxtService.java: C:\Users\LO Q\IdeaProjects\SpiderSync\src\main\java\com\Project\SpiderSync\crawler\RobotsTxtService.java uses or overrides a deprecated API.
+[INFO] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/crawler/RobotsTxtService.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ SpiderSync ---
 [INFO] skip non existing resourceDirectory C:\Users\LO Q\IdeaProjects\SpiderSync\src\test\resources
 [INFO] 
 [INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ SpiderSync ---
-[INFO] Nothing to compile - all classes are up to date.
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
 [INFO] 
 [INFO] <<< spring-boot:3.4.1:run (default-cli) < test-compile @ SpiderSync <<<
 [INFO] 
@@ -35,40 +39,45 @@
 
  :: Spring Boot ::                (v3.4.1)
 
-2026-01-20 15:55:40 - Starting SpiderSyncApplication using Java 21.0.9 with PID 33308 (C:\Users\LO Q\IdeaProjects\SpiderSync\target\classes started by LO Q in C:\Users\LO Q\IdeaProjects\SpiderSync)
-2026-01-20 15:55:40 - Running with Spring Boot v3.4.1, Spring v6.2.1
-2026-01-20 15:55:40 - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 15:55:40 - The Class-Path manifest attribute in C:\Users\LO Q\.m2\repository\org\apache\opennlp\opennlp-tools\2.3.1\opennlp-tools-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/LO%20Q/.m2/repository/org/apache/opennlp/opennlp-tools/2.3.1/slf4j-api-1.7.36.jar
-2026-01-20 15:55:40 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-20 15:55:40 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-20 15:55:42 - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-01-20 15:55:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-20 15:55:42 - Finished Spring Data repository scanning in 181 ms. Found 4 JPA repository interfaces.
-2026-01-20 15:55:42 - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-01-20 15:55:42 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-01-20 15:55:42 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.CrawlJobRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-20 15:55:42 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.PageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-20 15:55:42 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.SearchQueryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-20 15:55:42 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-20 15:55:42 - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-2026-01-20 15:55:44 - Tomcat initialized with port 8082 (http)
-2026-01-20 15:55:44 - Starting service [Tomcat]
-2026-01-20 15:55:44 - Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-01-20 15:55:44 - Initializing Spring embedded WebApplicationContext
-2026-01-20 15:55:44 - Root WebApplicationContext: initialization completed in 4084 ms
-2026-01-20 15:55:44 - HikariPool-1 - Starting...
-2026-01-20 15:55:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b826d07
-2026-01-20 15:55:45 - HikariPool-1 - Start completed.
-2026-01-20 15:55:45 - Database: jdbc:mysql://localhost:3306/search_engine?createDatabaseIfNotExists=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true (MySQL 8.0)
-2026-01-20 15:55:45 - Successfully validated 2 migrations (execution time 00:00.037s)
-2026-01-20 15:55:45 - Current version of schema `search_engine`: 1
-2026-01-20 15:55:45 - Schema `search_engine` is up to date. No migration necessary.
-2026-01-20 15:55:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-20 15:55:45 - HHH000412: Hibernate ORM core version 6.6.4.Final
-2026-01-20 15:55:45 - HHH000026: Second-level cache disabled
-2026-01-20 15:55:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-20 15:55:46 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-01-20 15:55:46 - HHH10001005: Database info:
+2026-01-21 13:48:16 - Starting SpiderSyncApplication using Java 24.0.2 with PID 15860 (C:\Users\LO Q\IdeaProjects\SpiderSync\target\classes started by LO Q in C:\Users\LO Q\IdeaProjects\SpiderSync)
+2026-01-21 13:48:16 - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-01-21 13:48:16 - No active profile set, falling back to 1 default profile: "default"
+2026-01-21 13:48:16 - The Class-Path manifest attribute in C:\Users\LO Q\.m2\repository\org\apache\opennlp\opennlp-tools\2.3.1\opennlp-tools-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/LO%20Q/.m2/repository/org/apache/opennlp/opennlp-tools/2.3.1/slf4j-api-1.7.36.jar
+2026-01-21 13:48:16 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-21 13:48:16 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-21 13:48:18 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-21 13:48:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21 13:48:18 - Finished Spring Data repository scanning in 192 ms. Found 4 JPA repository interfaces.
+2026-01-21 13:48:18 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-21 13:48:18 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-21 13:48:18 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.CrawlJobRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-21 13:48:18 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.PageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-21 13:48:18 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.SearchQueryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-21 13:48:18 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.Project.SpiderSync.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-21 13:48:18 - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/LO%20Q/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-01-21 13:48:20 - Tomcat initialized with port 8081 (http)
+2026-01-21 13:48:20 - Starting service [Tomcat]
+2026-01-21 13:48:20 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-21 13:48:20 - Initializing Spring embedded WebApplicationContext
+2026-01-21 13:48:20 - Root WebApplicationContext: initialization completed in 4005 ms
+2026-01-21 13:48:21 - HikariPool-1 - Starting...
+2026-01-21 13:48:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e8c714d
+2026-01-21 13:48:21 - HikariPool-1 - Start completed.
+2026-01-21 13:48:21 - Database: jdbc:mysql://localhost:3306/search_engine?createDatabaseIfNotExists=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true (MySQL 8.0)
+2026-01-21 13:48:21 - Successfully validated 2 migrations (execution time 00:00.036s)
+2026-01-21 13:48:21 - Current version of schema `search_engine`: 1
+2026-01-21 13:48:21 - Schema `search_engine` is up to date. No migration necessary.
+2026-01-21 13:48:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21 13:48:21 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-21 13:48:21 - HHH000026: Second-level cache disabled
+2026-01-21 13:48:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21 13:48:22 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21 13:48:22 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.44
@@ -76,61 +85,916 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-01-20 15:55:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-20 15:55:47 - 
+2026-01-21 13:48:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21 13:48:23 - 
     alter table crawl_jobs 
        modify column status enum ('CANCELLED','COMPLETED','FAILED','PENDING','RUNNING') not null
-2026-01-20 15:55:47 - 
+2026-01-21 13:48:23 - 
     alter table users 
        modify column role enum ('ADMIN','USER') not null
-2026-01-20 15:55:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-20 15:55:47 - Filter 'jwtAuthenticationFilter' configured for use
-2026-01-20 15:55:47 - Filter 'webMvcObservationFilter' configured for use
-2026-01-20 15:55:47 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2026-01-20 15:55:48 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-20 15:55:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-20 15:55:50 - Adding welcome page: class path resource [static/index.html]
-2026-01-20 15:55:50 - 17 mappings in 'requestMappingHandlerMapping'
-2026-01-20 15:55:50 - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-01-20 15:55:51 - Exposing 4 endpoints beneath base path '/actuator'
-2026-01-20 15:55:51 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-01-20 15:55:51 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-01-20 15:55:51 - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-01-20 15:55:52 - The cache 'robots-txt' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
-2026-01-20 15:55:52 - The cache 'pages' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
-2026-01-20 15:55:52 - The cache 'search-results' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
-2026-01-20 15:55:52 - LiveReload server is running on port 35729
-2026-01-20 15:55:52 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2026-01-20 15:55:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-20 15:55:52 - HikariPool-1 - Shutdown initiated...
-2026-01-20 15:55:52 - HikariPool-1 - Shutdown completed.
-2026-01-20 15:55:52 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-01-20 15:55:52 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8082 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
-
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  18.797 s
-[INFO] Finished at: 2026-01-20T15:55:54+05:30
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.1:run (default-cli) on project SpiderSync: Process terminated with exit code: 1 -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2026-01-21 13:48:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21 13:48:23 - Filter 'jwtAuthenticationFilter' configured for use
+2026-01-21 13:48:23 - Filter 'webMvcObservationFilter' configured for use
+2026-01-21 13:48:23 - Filter 'rateLimitingFilter' configured for use
+2026-01-21 13:48:23 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-21 13:48:24 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-01-21 13:48:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21 13:48:25 - Adding welcome page: class path resource [static/index.html]
+2026-01-21 13:48:26 - 19 mappings in 'requestMappingHandlerMapping'
+2026-01-21 13:48:26 - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/C:/Users/LO%20Q/.m2/repository/io/netty/netty-common/4.1.116.Final/netty-common-4.1.116.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+2026-01-21 13:48:26 - Exposing 4 endpoints beneath base path '/actuator'
+2026-01-21 13:48:26 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RateLimitingFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-21 13:48:27 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-01-21 13:48:27 - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-01-21 13:48:27 - The cache 'robots-txt' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-01-21 13:48:27 - The cache 'pages' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-01-21 13:48:27 - The cache 'search-results' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-01-21 13:48:28 - LiveReload server is running on port 35729
+2026-01-21 13:48:28 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-21 13:48:28 - Started SpiderSyncApplication in 12.436 seconds (process running for 13.309)
+2026-01-21 13:48:28 - Starting data seeding...
+2026-01-21 13:48:28 - Saving 19 pages to database...
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - 
+    insert 
+    into
+        pages
+        (content, content_hash, crawl_depth, created_at, description, keywords, language, last_crawled_at, page_rank, response_time, status_code, title, updated_at, url) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:48:28 - Successfully saved 19 pages to database
+2026-01-21 13:48:28 - Indexing pages in Elasticsearch...
+2026-01-21 13:48:28 - Error creating Elasticsearch index: Connection refused: getsockopt
+2026-01-21 13:48:28 - Error in bulk indexing: Connection refused: getsockopt
+2026-01-21 13:48:28 - Data seeding completed successfully!
+2026-01-21 13:48:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-21 13:48:49 - Initializing Servlet 'dispatcherServlet'
+2026-01-21 13:48:49 - Detected StandardServletMultipartResolver
+2026-01-21 13:48:49 - Detected AcceptHeaderLocaleResolver
+2026-01-21 13:48:49 - Detected FixedThemeResolver
+2026-01-21 13:48:49 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@33e17aad
+2026-01-21 13:48:49 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@217d0bf
+2026-01-21 13:48:49 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-01-21 13:48:49 - Completed initialization in 4 ms
+2026-01-21 13:48:49 - Securing GET /
+2026-01-21 13:48:49 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:48:49 - Secured GET /
+2026-01-21 13:48:49 - GET "/", parameters={}
+2026-01-21 13:48:49 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 13:48:49 - View name [forward:], model {}
+2026-01-21 13:48:49 - Forwarding to [index.html]
+2026-01-21 13:48:49 - Securing GET /index.html
+2026-01-21 13:48:49 - Secured GET /index.html
+2026-01-21 13:48:49 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 13:48:49 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:48:49 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 13:48:49 - Completed 200 OK
+2026-01-21 13:48:49 - Securing GET /css/styles.css
+2026-01-21 13:48:49 - Securing GET /js/search.js
+2026-01-21 13:48:49 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:48:49 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:48:49 - Secured GET /js/search.js
+2026-01-21 13:48:49 - Secured GET /css/styles.css
+2026-01-21 13:48:49 - GET "/css/styles.css", parameters={}
+2026-01-21 13:48:49 - GET "/js/search.js", parameters={}
+2026-01-21 13:48:49 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:48:49 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:48:49 - Completed 200 OK
+2026-01-21 13:48:49 - Completed 200 OK
+2026-01-21 13:48:50 - Securing GET /api/search/stats
+2026-01-21 13:48:50 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:48:50 - Secured GET /api/search/stats
+2026-01-21 13:48:50 - GET "/api/search/stats", parameters={}
+2026-01-21 13:48:50 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 13:48:50 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:48:50 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 13:48:50 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:48:50 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@797e022c]
+2026-01-21 13:48:50 - Completed 200 OK
+2026-01-21 13:48:50 - Securing GET /favicon.ico
+2026-01-21 13:48:50 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:48:50 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:48:50 - Securing GET /error
+2026-01-21 13:48:50 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:48:50 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:49:01 - Securing GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:49:01 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:49:01 - Secured GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:49:01 - GET "/api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8", parameters={masked}
+2026-01-21 13:49:01 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 13:49:01 - Error in autocomplete: Connection refused: getsockopt
+2026-01-21 13:49:01 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:49:01 - Writing [[]]
+2026-01-21 13:49:01 - Completed 200 OK
+2026-01-21 13:49:12 - Securing GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:49:12 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:49:12 - Secured GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:49:12 - GET "/api/search?q=Future+of+Artificial+Intelligence", parameters={masked}
+2026-01-21 13:49:12 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:49:12 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:49:12 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:49:12 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:49:12 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:49:12 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=18}]
+2026-01-21 13:49:12 - Completed 200 OK
+2026-01-21 13:50:42 - Securing GET /api/search/autocomplete?q=AI&size=8
+2026-01-21 13:50:42 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:50:42 - Secured GET /api/search/autocomplete?q=AI&size=8
+2026-01-21 13:50:42 - GET "/api/search/autocomplete?q=AI&size=8", parameters={masked}
+2026-01-21 13:50:42 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 13:50:42 - Error in autocomplete: Connection refused: getsockopt
+2026-01-21 13:50:42 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:50:42 - Writing [[]]
+2026-01-21 13:50:42 - Completed 200 OK
+2026-01-21 13:50:54 - Securing GET /api/search?q=AI
+2026-01-21 13:50:54 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:50:54 - Secured GET /api/search?q=AI
+2026-01-21 13:50:54 - GET "/api/search?q=AI", parameters={masked}
+2026-01-21 13:50:54 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:50:54 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:50:54 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:50:54 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:50:54 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:50:54 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=10}]
+2026-01-21 13:50:54 - Completed 200 OK
+2026-01-21 13:51:08 - Securing GET /api/admin/stats
+2026-01-21 13:51:08 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:51:08 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:51:08 - Securing GET /error
+2026-01-21 13:51:08 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:51:08 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:53:05 - Securing GET /
+2026-01-21 13:53:05 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:05 - Secured GET /
+2026-01-21 13:53:05 - GET "/", parameters={}
+2026-01-21 13:53:05 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 13:53:05 - View name [forward:], model {}
+2026-01-21 13:53:05 - Forwarding to [index.html]
+2026-01-21 13:53:05 - Securing GET /index.html
+2026-01-21 13:53:05 - Secured GET /index.html
+2026-01-21 13:53:05 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 13:53:05 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:53:05 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 13:53:05 - Completed 200 OK
+2026-01-21 13:53:05 - Securing GET /css/styles.css
+2026-01-21 13:53:05 - Securing GET /js/search.js
+2026-01-21 13:53:05 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:05 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:05 - Secured GET /css/styles.css
+2026-01-21 13:53:05 - GET "/css/styles.css", parameters={}
+2026-01-21 13:53:05 - Secured GET /js/search.js
+2026-01-21 13:53:05 - GET "/js/search.js", parameters={}
+2026-01-21 13:53:05 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:53:05 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:53:05 - Completed 200 OK
+2026-01-21 13:53:05 - Completed 200 OK
+2026-01-21 13:53:05 - Securing GET /api/search/stats
+2026-01-21 13:53:05 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:05 - Secured GET /api/search/stats
+2026-01-21 13:53:05 - GET "/api/search/stats", parameters={}
+2026-01-21 13:53:05 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 13:53:05 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:53:05 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 13:53:05 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:53:05 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@34a724f5]
+2026-01-21 13:53:05 - Completed 200 OK
+2026-01-21 13:53:05 - Securing GET /favicon.ico
+2026-01-21 13:53:05 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:05 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:53:05 - Securing GET /error
+2026-01-21 13:53:05 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:05 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:53:43 - Securing GET /api/search/autocomplete?q=Space%20Exploration&size=8
+2026-01-21 13:53:43 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:43 - Secured GET /api/search/autocomplete?q=Space%20Exploration&size=8
+2026-01-21 13:53:43 - GET "/api/search/autocomplete?q=Space%20Exploration&size=8", parameters={masked}
+2026-01-21 13:53:43 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 13:53:43 - Error in autocomplete: Connection refused: getsockopt
+2026-01-21 13:53:43 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:53:43 - Writing [[]]
+2026-01-21 13:53:44 - Completed 200 OK
+2026-01-21 13:53:49 - Securing GET /api/search?q=Space+Exploration
+2026-01-21 13:53:49 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:49 - Secured GET /api/search?q=Space+Exploration
+2026-01-21 13:53:49 - GET "/api/search?q=Space+Exploration", parameters={masked}
+2026-01-21 13:53:49 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:53:49 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:53:49 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:53:49 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:53:49 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:53:49 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=3}]
+2026-01-21 13:53:49 - Completed 200 OK
+2026-01-21 13:53:56 - Securing POST /api/admin/seed-data
+2026-01-21 13:53:56 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:56 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:53:56 - Securing POST /error
+2026-01-21 13:53:56 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:53:56 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:54:11 - Securing GET /
+2026-01-21 13:54:11 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:11 - Secured GET /
+2026-01-21 13:54:11 - GET "/", parameters={}
+2026-01-21 13:54:11 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 13:54:11 - View name [forward:], model {}
+2026-01-21 13:54:11 - Forwarding to [index.html]
+2026-01-21 13:54:11 - Securing GET /index.html
+2026-01-21 13:54:11 - Secured GET /index.html
+2026-01-21 13:54:11 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 13:54:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:54:11 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 13:54:11 - Completed 200 OK
+2026-01-21 13:54:11 - Securing GET /js/search.js
+2026-01-21 13:54:11 - Securing GET /css/styles.css
+2026-01-21 13:54:11 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:11 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:11 - Secured GET /css/styles.css
+2026-01-21 13:54:11 - Secured GET /js/search.js
+2026-01-21 13:54:11 - GET "/css/styles.css", parameters={}
+2026-01-21 13:54:11 - GET "/js/search.js", parameters={}
+2026-01-21 13:54:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:54:11 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:54:11 - Completed 200 OK
+2026-01-21 13:54:11 - Completed 200 OK
+2026-01-21 13:54:11 - Securing GET /api/search/stats
+2026-01-21 13:54:11 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:11 - Secured GET /api/search/stats
+2026-01-21 13:54:11 - GET "/api/search/stats", parameters={}
+2026-01-21 13:54:11 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 13:54:11 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:54:11 - Securing GET /favicon.ico
+2026-01-21 13:54:11 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 13:54:11 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:54:11 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:11 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@4bd3789b]
+2026-01-21 13:54:11 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:54:11 - Completed 200 OK
+2026-01-21 13:54:11 - Securing GET /error
+2026-01-21 13:54:11 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:11 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:54:18 - Securing GET /api/search?q=technology
+2026-01-21 13:54:18 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:18 - Secured GET /api/search?q=technology
+2026-01-21 13:54:18 - GET "/api/search?q=technology", parameters={masked}
+2026-01-21 13:54:18 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:54:18 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:54:18 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:54:18 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:54:18 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:54:18 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=5}]
+2026-01-21 13:54:18 - Completed 200 OK
+2026-01-21 13:54:26 - Securing GET /swagger-ui.html
+2026-01-21 13:54:26 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:26 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:54:26 - Securing GET /error
+2026-01-21 13:54:26 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:26 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:54:32 - Securing GET /
+2026-01-21 13:54:32 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:32 - Secured GET /
+2026-01-21 13:54:32 - GET "/", parameters={}
+2026-01-21 13:54:32 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 13:54:32 - View name [forward:], model {}
+2026-01-21 13:54:32 - Forwarding to [index.html]
+2026-01-21 13:54:32 - Securing GET /index.html
+2026-01-21 13:54:32 - Secured GET /index.html
+2026-01-21 13:54:32 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 13:54:32 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:54:32 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 13:54:32 - Completed 200 OK
+2026-01-21 13:54:33 - Securing GET /css/styles.css
+2026-01-21 13:54:33 - Securing GET /js/search.js
+2026-01-21 13:54:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:33 - Secured GET /css/styles.css
+2026-01-21 13:54:33 - Secured GET /js/search.js
+2026-01-21 13:54:33 - GET "/js/search.js", parameters={}
+2026-01-21 13:54:33 - GET "/css/styles.css", parameters={}
+2026-01-21 13:54:33 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:54:33 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:54:33 - Completed 200 OK
+2026-01-21 13:54:33 - Completed 200 OK
+2026-01-21 13:54:33 - Securing GET /api/search/stats
+2026-01-21 13:54:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:33 - Secured GET /api/search/stats
+2026-01-21 13:54:33 - GET "/api/search/stats", parameters={}
+2026-01-21 13:54:33 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 13:54:33 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:54:33 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 13:54:33 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:54:33 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@f4c2d52]
+2026-01-21 13:54:33 - Completed 200 OK
+2026-01-21 13:54:33 - Securing GET /favicon.ico
+2026-01-21 13:54:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:33 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:54:33 - Securing GET /error
+2026-01-21 13:54:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:33 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:54:39 - Securing GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:54:39 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:39 - Secured GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:54:39 - GET "/api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8", parameters={masked}
+2026-01-21 13:54:39 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 13:54:39 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:54:39 - Writing [[]]
+2026-01-21 13:54:39 - Completed 200 OK
+2026-01-21 13:54:47 - Securing GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:54:47 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:54:47 - Secured GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:54:47 - GET "/api/search?q=Future+of+Artificial+Intelligence", parameters={masked}
+2026-01-21 13:54:47 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:54:47 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:54:47 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:54:47 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:54:47 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=0}]
+2026-01-21 13:54:47 - Completed 200 OK
+2026-01-21 13:55:25 - Securing GET /api/search?q=Artificial+Intelligence
+2026-01-21 13:55:25 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:25 - Secured GET /api/search?q=Artificial+Intelligence
+2026-01-21 13:55:25 - GET "/api/search?q=Artificial+Intelligence", parameters={masked}
+2026-01-21 13:55:25 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:55:25 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:55:25 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:55:25 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:55:25 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:55:25 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=3}]
+2026-01-21 13:55:25 - Completed 200 OK
+2026-01-21 13:55:33 - Securing GET /
+2026-01-21 13:55:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:33 - Secured GET /
+2026-01-21 13:55:33 - GET "/", parameters={}
+2026-01-21 13:55:33 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 13:55:33 - View name [forward:], model {}
+2026-01-21 13:55:33 - Forwarding to [index.html]
+2026-01-21 13:55:33 - Securing GET /index.html
+2026-01-21 13:55:33 - Secured GET /index.html
+2026-01-21 13:55:33 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 13:55:33 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:55:33 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 13:55:33 - Completed 200 OK
+2026-01-21 13:55:33 - Securing GET /css/styles.css
+2026-01-21 13:55:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:33 - Secured GET /css/styles.css
+2026-01-21 13:55:33 - GET "/css/styles.css", parameters={}
+2026-01-21 13:55:33 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:55:33 - Securing GET /js/search.js
+2026-01-21 13:55:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:33 - Completed 200 OK
+2026-01-21 13:55:33 - Secured GET /js/search.js
+2026-01-21 13:55:33 - GET "/js/search.js", parameters={}
+2026-01-21 13:55:33 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:55:33 - Completed 200 OK
+2026-01-21 13:55:33 - Securing GET /api/search/stats
+2026-01-21 13:55:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:33 - Secured GET /api/search/stats
+2026-01-21 13:55:33 - Securing GET /favicon.ico
+2026-01-21 13:55:33 - GET "/api/search/stats", parameters={}
+2026-01-21 13:55:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:33 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:55:33 - Securing GET /error
+2026-01-21 13:55:33 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:33 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:55:33 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 13:55:33 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:55:33 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 13:55:33 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:55:33 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@747ed814]
+2026-01-21 13:55:33 - Completed 200 OK
+2026-01-21 13:55:38 - Securing GET /api/search/autocomplete?q=AI&size=8
+2026-01-21 13:55:38 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:38 - Secured GET /api/search/autocomplete?q=AI&size=8
+2026-01-21 13:55:38 - GET "/api/search/autocomplete?q=AI&size=8", parameters={masked}
+2026-01-21 13:55:38 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 13:55:38 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:55:38 - Writing [[]]
+2026-01-21 13:55:38 - Completed 200 OK
+2026-01-21 13:55:46 - Securing GET /api/search?q=AI&size=1
+2026-01-21 13:55:46 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:46 - Secured GET /api/search?q=AI&size=1
+2026-01-21 13:55:46 - GET "/api/search?q=AI&size=1", parameters={masked}
+2026-01-21 13:55:46 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:55:46 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:55:46 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:55:46 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:55:46 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:55:46 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=1, searchTimeMs=5}]
+2026-01-21 13:55:46 - Completed 200 OK
+2026-01-21 13:55:46 - Securing GET /api/search?q=AI
+2026-01-21 13:55:46 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:55:46 - Secured GET /api/search?q=AI
+2026-01-21 13:55:46 - GET "/api/search?q=AI", parameters={masked}
+2026-01-21 13:55:46 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:55:46 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:55:46 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:55:46 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:55:46 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=1}]
+2026-01-21 13:55:46 - Completed 200 OK
+2026-01-21 13:56:35 - Securing GET /
+2026-01-21 13:56:35 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:56:35 - Secured GET /
+2026-01-21 13:56:35 - GET "/", parameters={}
+2026-01-21 13:56:35 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 13:56:35 - View name [forward:], model {}
+2026-01-21 13:56:35 - Forwarding to [index.html]
+2026-01-21 13:56:35 - Securing GET /index.html
+2026-01-21 13:56:35 - Secured GET /index.html
+2026-01-21 13:56:35 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 13:56:35 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:56:35 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 13:56:35 - Completed 200 OK
+2026-01-21 13:56:35 - Securing GET /css/styles.css
+2026-01-21 13:56:35 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:56:35 - Secured GET /css/styles.css
+2026-01-21 13:56:35 - GET "/css/styles.css", parameters={}
+2026-01-21 13:56:35 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:56:35 - Completed 200 OK
+2026-01-21 13:56:35 - Securing GET /js/search.js
+2026-01-21 13:56:35 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:56:35 - Secured GET /js/search.js
+2026-01-21 13:56:35 - GET "/js/search.js", parameters={}
+2026-01-21 13:56:35 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:56:35 - Completed 200 OK
+2026-01-21 13:56:35 - Securing GET /api/search/stats
+2026-01-21 13:56:35 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:56:35 - Securing GET /favicon.ico
+2026-01-21 13:56:35 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:56:35 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:56:35 - Secured GET /api/search/stats
+2026-01-21 13:56:35 - Securing GET /error
+2026-01-21 13:56:35 - GET "/api/search/stats", parameters={}
+2026-01-21 13:56:35 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 13:56:35 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:56:35 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:56:35 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:56:35 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 13:56:35 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:56:35 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@31542ea7]
+2026-01-21 13:56:35 - Completed 200 OK
+2026-01-21 13:56:51 - Securing GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:56:51 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:56:51 - Secured GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:56:51 - GET "/api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8", parameters={masked}
+2026-01-21 13:56:51 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 13:56:51 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:56:51 - Writing [[]]
+2026-01-21 13:56:51 - Completed 200 OK
+2026-01-21 13:57:00 - Securing GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:57:00 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:00 - Secured GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:57:00 - GET "/api/search?q=Future+of+Artificial+Intelligence", parameters={masked}
+2026-01-21 13:57:00 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:57:00 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:57:00 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:57:00 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:57:00 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=0}]
+2026-01-21 13:57:00 - Completed 200 OK
+2026-01-21 13:57:47 - Securing GET /results?q=Space%20Exploration
+2026-01-21 13:57:47 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:47 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:57:47 - Securing GET /error?q=Space%20Exploration
+2026-01-21 13:57:47 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:47 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:57:55 - Securing GET /
+2026-01-21 13:57:55 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:55 - Secured GET /
+2026-01-21 13:57:55 - GET "/", parameters={}
+2026-01-21 13:57:55 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 13:57:55 - View name [forward:], model {}
+2026-01-21 13:57:55 - Forwarding to [index.html]
+2026-01-21 13:57:55 - Securing GET /index.html
+2026-01-21 13:57:55 - Secured GET /index.html
+2026-01-21 13:57:55 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 13:57:55 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:57:55 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 13:57:55 - Completed 200 OK
+2026-01-21 13:57:55 - Securing GET /css/styles.css
+2026-01-21 13:57:55 - Securing GET /js/search.js
+2026-01-21 13:57:55 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:55 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:55 - Secured GET /css/styles.css
+2026-01-21 13:57:55 - GET "/css/styles.css", parameters={}
+2026-01-21 13:57:55 - Secured GET /js/search.js
+2026-01-21 13:57:55 - GET "/js/search.js", parameters={}
+2026-01-21 13:57:55 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:57:55 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 13:57:55 - Completed 200 OK
+2026-01-21 13:57:55 - Completed 200 OK
+2026-01-21 13:57:55 - Securing GET /api/search/stats
+2026-01-21 13:57:55 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:55 - Secured GET /api/search/stats
+2026-01-21 13:57:55 - GET "/api/search/stats", parameters={}
+2026-01-21 13:57:55 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 13:57:55 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:57:55 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 13:57:55 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:57:55 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@4a67047a]
+2026-01-21 13:57:55 - Securing GET /favicon.ico
+2026-01-21 13:57:55 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:55 - Completed 200 OK
+2026-01-21 13:57:55 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:57:55 - Securing GET /error
+2026-01-21 13:57:55 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:57:55 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:58:07 - Securing GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:58:07 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:58:07 - Secured GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 13:58:07 - GET "/api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8", parameters={masked}
+2026-01-21 13:58:07 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 13:58:07 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:58:07 - Writing [[]]
+2026-01-21 13:58:07 - Completed 200 OK
+2026-01-21 13:58:14 - Securing GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:58:14 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:58:14 - Secured GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 13:58:14 - GET "/api/search?q=Future+of+Artificial+Intelligence", parameters={masked}
+2026-01-21 13:58:14 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:58:14 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:58:14 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:58:14 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:58:14 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=0}]
+2026-01-21 13:58:14 - Completed 200 OK
+2026-01-21 13:58:29 - Securing GET /api/search?q=AI
+2026-01-21 13:58:29 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:58:29 - Secured GET /api/search?q=AI
+2026-01-21 13:58:29 - GET "/api/search?q=AI", parameters={masked}
+2026-01-21 13:58:29 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:58:29 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:58:29 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:58:29 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:58:29 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=0}]
+2026-01-21 13:58:29 - Completed 200 OK
+2026-01-21 13:58:50 - Securing GET /api/search?q=Future
+2026-01-21 13:58:50 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:58:50 - Secured GET /api/search?q=Future
+2026-01-21 13:58:50 - GET "/api/search?q=Future", parameters={masked}
+2026-01-21 13:58:50 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:58:50 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:58:50 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:58:50 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:58:50 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:58:50 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=6}]
+2026-01-21 13:58:50 - Completed 200 OK
+2026-01-21 13:59:26 - Securing GET /api/search?q=*
+2026-01-21 13:59:26 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:59:26 - Secured GET /api/search?q=*
+2026-01-21 13:59:26 - GET "/api/search?q=*", parameters={masked}
+2026-01-21 13:59:26 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 13:59:26 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 13:59:26 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 13:59:26 - Error counting documents: Connection refused: getsockopt
+2026-01-21 13:59:26 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 13:59:26 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=10}]
+2026-01-21 13:59:26 - Completed 200 OK
+2026-01-21 13:59:38 - Securing GET /swagger-ui.html
+2026-01-21 13:59:38 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:59:38 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 13:59:38 - Securing GET /error
+2026-01-21 13:59:38 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 13:59:38 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 14:00:32 - Securing GET /
+2026-01-21 14:00:32 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:32 - Secured GET /
+2026-01-21 14:00:32 - GET "/", parameters={}
+2026-01-21 14:00:32 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 14:00:32 - View name [forward:], model {}
+2026-01-21 14:00:32 - Forwarding to [index.html]
+2026-01-21 14:00:32 - Securing GET /index.html
+2026-01-21 14:00:32 - Secured GET /index.html
+2026-01-21 14:00:32 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 14:00:32 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 14:00:32 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 14:00:32 - Completed 200 OK
+2026-01-21 14:00:32 - Securing GET /css/styles.css
+2026-01-21 14:00:32 - Securing GET /js/search.js
+2026-01-21 14:00:32 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:32 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:32 - Secured GET /css/styles.css
+2026-01-21 14:00:32 - Secured GET /js/search.js
+2026-01-21 14:00:32 - GET "/css/styles.css", parameters={}
+2026-01-21 14:00:32 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 14:00:32 - GET "/js/search.js", parameters={}
+2026-01-21 14:00:32 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 14:00:32 - Completed 200 OK
+2026-01-21 14:00:32 - Completed 200 OK
+2026-01-21 14:00:32 - Securing GET /api/search/stats
+2026-01-21 14:00:32 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:32 - Secured GET /api/search/stats
+2026-01-21 14:00:32 - GET "/api/search/stats", parameters={}
+2026-01-21 14:00:32 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 14:00:32 - Error counting documents: Connection refused: getsockopt
+2026-01-21 14:00:32 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 14:00:32 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 14:00:32 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@773393ee]
+2026-01-21 14:00:32 - Completed 200 OK
+2026-01-21 14:00:32 - Securing GET /favicon.ico
+2026-01-21 14:00:32 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:32 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 14:00:32 - Securing GET /error
+2026-01-21 14:00:32 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:32 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 14:00:43 - Securing GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 14:00:43 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:43 - Secured GET /api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8
+2026-01-21 14:00:43 - GET "/api/search/autocomplete?q=Future%20of%20Artificial%20Intelligence&size=8", parameters={masked}
+2026-01-21 14:00:43 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 14:00:43 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 14:00:43 - Writing [[]]
+2026-01-21 14:00:43 - Completed 200 OK
+2026-01-21 14:00:54 - Securing GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 14:00:54 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:00:54 - Secured GET /api/search?q=Future+of+Artificial+Intelligence
+2026-01-21 14:00:54 - GET "/api/search?q=Future+of+Artificial+Intelligence", parameters={masked}
+2026-01-21 14:00:54 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 14:00:54 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 14:00:54 - Error counting documents: Connection refused: getsockopt
+2026-01-21 14:00:54 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 14:00:54 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=1}]
+2026-01-21 14:00:54 - Completed 200 OK
+2026-01-21 14:01:09 - Securing GET /api/auth/login
+2026-01-21 14:01:09 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:09 - Secured GET /api/auth/login
+2026-01-21 14:01:09 - GET "/api/auth/login", parameters={}
+2026-01-21 14:01:09 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-01-21 14:01:09 - Completed 405 METHOD_NOT_ALLOWED
+2026-01-21 14:01:09 - Securing GET /error
+2026-01-21 14:01:09 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:09 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 14:01:21 - Securing GET /
+2026-01-21 14:01:21 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:21 - Secured GET /
+2026-01-21 14:01:21 - GET "/", parameters={}
+2026-01-21 14:01:21 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-01-21 14:01:21 - View name [forward:], model {}
+2026-01-21 14:01:21 - Forwarding to [index.html]
+2026-01-21 14:01:21 - Securing GET /index.html
+2026-01-21 14:01:21 - Secured GET /index.html
+2026-01-21 14:01:21 - "FORWARD" dispatch for GET "/index.html", parameters={}
+2026-01-21 14:01:21 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 14:01:21 - Exiting from "FORWARD" dispatch, status 200
+2026-01-21 14:01:21 - Completed 200 OK
+2026-01-21 14:01:21 - Securing GET /css/styles.css
+2026-01-21 14:01:21 - Securing GET /js/search.js
+2026-01-21 14:01:21 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:21 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:21 - Secured GET /css/styles.css
+2026-01-21 14:01:21 - Secured GET /js/search.js
+2026-01-21 14:01:21 - GET "/css/styles.css", parameters={}
+2026-01-21 14:01:21 - GET "/js/search.js", parameters={}
+2026-01-21 14:01:21 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 14:01:21 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-21 14:01:21 - Completed 200 OK
+2026-01-21 14:01:21 - Completed 200 OK
+2026-01-21 14:01:21 - Securing GET /api/search/stats
+2026-01-21 14:01:21 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:21 - Secured GET /api/search/stats
+2026-01-21 14:01:21 - GET "/api/search/stats", parameters={}
+2026-01-21 14:01:21 - Mapped to com.Project.SpiderSync.controller.SearchController#getStats()
+2026-01-21 14:01:21 - Error counting documents: Connection refused: getsockopt
+2026-01-21 14:01:21 - Error checking index existence: Connection refused: getsockopt
+2026-01-21 14:01:21 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 14:01:21 - Writing [com.Project.SpiderSync.controller.SearchController$SearchStatsDTO@3358cd94]
+2026-01-21 14:01:21 - Completed 200 OK
+2026-01-21 14:01:21 - Securing GET /favicon.ico
+2026-01-21 14:01:21 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:21 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 14:01:21 - Securing GET /error
+2026-01-21 14:01:21 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:21 - Pre-authenticated entry point called. Rejecting access
+2026-01-21 14:01:46 - Securing GET /api/search/autocomplete?q=Java&size=8
+2026-01-21 14:01:46 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:01:46 - Secured GET /api/search/autocomplete?q=Java&size=8
+2026-01-21 14:01:46 - GET "/api/search/autocomplete?q=Java&size=8", parameters={masked}
+2026-01-21 14:01:46 - Mapped to com.Project.SpiderSync.controller.SearchController#autocomplete(String, int)
+2026-01-21 14:01:46 - Error in autocomplete: Connection refused: getsockopt
+2026-01-21 14:01:46 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 14:01:46 - Writing [[]]
+2026-01-21 14:01:46 - Completed 200 OK
+2026-01-21 14:02:05 - Securing GET /api/search?q=Java
+2026-01-21 14:02:05 - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-21 14:02:05 - Secured GET /api/search?q=Java
+2026-01-21 14:02:05 - GET "/api/search?q=Java", parameters={masked}
+2026-01-21 14:02:05 - Mapped to com.Project.SpiderSync.controller.SearchController#search(String, String, Double, int, int, HttpServletRequest)
+2026-01-21 14:02:05 - Error searching Elasticsearch: Connection refused: getsockopt
+2026-01-21 14:02:05 - 
+    insert 
+    into
+        search_queries
+        (click_position, clicked_result_id, created_at, ip_address, query_text, results_count, search_time_ms, user_agent, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-01-21 14:02:05 - Error counting documents: Connection refused: getsockopt
+2026-01-21 14:02:05 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2026-01-21 14:02:05 - Writing [SearchResponseDTO{results=[], totalResults=0, page=0, size=10, searchTimeMs=3}]
+2026-01-21 14:02:05 - Completed 200 OK

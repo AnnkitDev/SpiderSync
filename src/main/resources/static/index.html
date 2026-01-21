@@ -3,54 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpiderSync - Professional Search Engine</title>
+    <meta name="description" content="SpiderSync - Fast, intelligent web search powered by advanced technology">
+    <title>SpiderSync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="logo">🕷️ SpiderSync</h1>
-            <p class="tagline">Professional High-End Search Engine</p>
-        </header>
+    <!-- Header Navigation -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <a href="#" class="nav-link">About</a>
+            <a href="/swagger-ui.html" class="nav-link">API</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-link">Settings</a>
+            <a href="/api/auth/login" class="nav-link signin-btn">Sign in</a>
+        </div>
+    </header>
 
-        <main>
-            <div class="search-container">
-                <div class="search-box">
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        placeholder="Search the web..." 
-                        autocomplete="off"
-                    />
-                    <button id="searchBtn" class="search-btn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </button>
-                </div>
+    <!-- Main Search Area -->
+    <main class="main-content">
+        <div class="logo-container">
+            <h1 class="logo">
+                <span class="logo-s">S</span><span class="logo-p">p</span><span class="logo-i">i</span><span class="logo-d">d</span><span class="logo-e">e</span><span class="logo-r">r</span><span class="logo-sync">Sync</span>
+            </h1>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box" id="searchBox">
+                <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="#9aa0a6" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="" 
+                    autocomplete="off"
+                    aria-label="Search"
+                />
+                <button class="voice-btn" title="Search by voice" aria-label="Search by voice">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#4285f4" d="M12 15c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v7c0 1.66 1.34 3 3 3z"/>
+                        <path fill="#ea4335" d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                    </svg>
+                </button>
                 <div id="suggestions" class="suggestions"></div>
             </div>
+        </div>
 
-            <div class="filters">
-                <select id="languageFilter">
-                    <option value="">All Languages</option>
-                    <option value="en">English</option>
-                    <option value="es">Spanish</option>
-                    <option value="fr">French</option>
-                    <option value="de">German</option>
-                </select>
-            </div>
+        <div class="button-container">
+            <button id="searchBtn" class="search-button">SpiderSync Search</button>
+            <button id="luckyBtn" class="search-button">I'm Feeling Lucky</button>
+        </div>
 
-            <div id="results" class="results"></div>
-            
+        <div class="filters" id="filtersSection" style="display: none;">
+            <select id="languageFilter" aria-label="Language filter">
+                <option value="">All Languages</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Chinese</option>
+                <option value="ja">Japanese</option>
+            </select>
+        </div>
+
+        <!-- Results Area (hidden initially) -->
+        <div id="resultsContainer" class="results-container" style="display: none;">
             <div id="stats" class="stats"></div>
-        </main>
+            <div id="results" class="results"></div>
+        </div>
 
-        <footer>
-            <p>Powered by Elasticsearch, Redis & Spring Boot | <a href="/swagger-ui.html">API Documentation</a></p>
-        </footer>
-    </div>
+        <!-- Quick Links (shown on homepage) -->
+        <div class="quick-links" id="quickLinks">
+            <span class="quick-links-label">Explore:</span>
+            <a href="#" class="quick-link" data-query="technology">Technology</a>
+            <a href="#" class="quick-link" data-query="science">Science</a>
+            <a href="#" class="quick-link" data-query="business">Business</a>
+            <a href="#" class="quick-link" data-query="health">Health</a>
+            <a href="#" class="quick-link" data-query="programming">Programming</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <span class="footer-country">India</span>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+            <div class="footer-right">
+                <a href="/swagger-ui.html">API Documentation</a>
+                <a href="#">Powered by Elasticsearch & Spring Boot</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="/js/search.js"></script>
 </body>

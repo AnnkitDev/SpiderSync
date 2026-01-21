@@ -188,4 +188,28 @@ public class IndexingService {
 
     return doc;
   }
+
+  /**
+   * Check if index exists
+   */
+  public boolean indexExists() {
+    try {
+      return elasticsearchClient.indices().exists(e -> e.index(indexName)).value();
+    } catch (IOException e) {
+      log.error("Error checking index existence: {}", e.getMessage());
+      return false;
+    }
+  }
+
+  /**
+   * Get total documents in index
+   */
+  public long getTotalDocuments() {
+    try {
+      return elasticsearchClient.count(c -> c.index(indexName)).count();
+    } catch (IOException e) {
+      log.error("Error getting total documents: {}", e.getMessage());
+      return 0;
+    }
+  }
 }

@@ -1,0 +1,59 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.SpiderSync:SpiderSync >----------------------
+[INFO] Building SpiderSync 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ SpiderSync ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ SpiderSync ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 37 source files with javac [debug parameters release 21] to target\classes
+[INFO] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/crawler/RobotsTxtService.java: C:\Users\LO Q\IdeaProjects\SpiderSync\src\main\java\com\Project\SpiderSync\crawler\RobotsTxtService.java uses or overrides a deprecated API.
+[INFO] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/crawler/RobotsTxtService.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/config/SecurityConfig.java:[29,19] cannot find symbol
+  symbol:   class RateLimitingFilter
+  location: class com.Project.SpiderSync.config.SecurityConfig
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/config/SecurityConfig.java:[31,66] cannot find symbol
+  symbol:   class RateLimitingFilter
+  location: class com.Project.SpiderSync.config.SecurityConfig
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/controller/AdminController.java:[155,45] cannot find symbol
+  symbol:   method indexExists()
+  location: variable indexingService of type com.Project.SpiderSync.service.IndexingService
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/controller/AdminController.java:[156,50] cannot find symbol
+  symbol:   method getTotalDocuments()
+  location: variable indexingService of type com.Project.SpiderSync.service.IndexingService
+[INFO] 4 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.099 s
+[INFO] Finished at: 2026-01-21T13:37:21+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project SpiderSync: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/config/SecurityConfig.java:[29,19] cannot find symbol
+[ERROR]   symbol:   class RateLimitingFilter
+[ERROR]   location: class com.Project.SpiderSync.config.SecurityConfig
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/config/SecurityConfig.java:[31,66] cannot find symbol
+[ERROR]   symbol:   class RateLimitingFilter
+[ERROR]   location: class com.Project.SpiderSync.config.SecurityConfig
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/controller/AdminController.java:[155,45] cannot find symbol
+[ERROR]   symbol:   method indexExists()
+[ERROR]   location: variable indexingService of type com.Project.SpiderSync.service.IndexingService
+[ERROR] /C:/Users/LO Q/IdeaProjects/SpiderSync/src/main/java/com/Project/SpiderSync/controller/AdminController.java:[156,50] cannot find symbol
+[ERROR]   symbol:   method getTotalDocuments()
+[ERROR]   location: variable indexingService of type com.Project.SpiderSync.service.IndexingService
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
