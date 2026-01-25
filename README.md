@@ -1,4 +1,4 @@
-# 🕷️ SpiderSync - Professional High-End Search Engine
+# 🕷️ SpiderSync - Web Search Engine
 
 [![CI/CD Pipeline](https://github.com/Annkit-rgb/SpiderSync/actions/workflows/ci.yml/badge.svg)](https://github.com/Annkit-rgb/SpiderSync/actions/workflows/ci.yml)
 [![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://www.oracle.com/java/)
@@ -6,67 +6,61 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-A professional, enterprise-grade web search engine built with Spring Boot, Elasticsearch, Redis, and RabbitMQ. SpiderSync features advanced web crawling, full-text search with BM25 ranking, NLP-powered keyword extraction, and a modern responsive UI.
+A web search engine built with Spring Boot, Elasticsearch, Redis, and RabbitMQ. Features include web crawling, full-text search with BM25 ranking, NLP keyword extraction, and a clean UI.
 
-## 📸 Screenshots
+## Screenshots
 
 ### Homepage
 ![SpiderSync Homepage](screenshots/homepage.png)
-*Clean, Google-like interface with quick link navigation*
 
 ### Search Results
 ![Search Results](screenshots/search_results.png)
-*Real-time search with fallback to MySQL when Elasticsearch is unavailable*
 
 ### API Documentation
 ![Swagger API Docs](screenshots/api_docs.png)
-*Comprehensive RESTful API with Swagger UI documentation*
 
 ### Health Monitoring
 ![Health Metrics](screenshots/health_metrics.png)
-*Spring Actuator health checks showing system status*
 
-### Search Demo
+### Demo
 ![Search Demo](screenshots/search_demo.webp)
-*Interactive search demonstration*
 
-## ✨ Features
+## Features
 
-### Core Search Engine
-- **Advanced Full-Text Search** powered by Elasticsearch with BM25 ranking
-- **Intelligent Web Crawler** with robots.txt compliance and politeness policies
-- **NLP-Powered Analysis** for keyword extraction and content classification
-- **Real-time Autocomplete** with search suggestions
-- **Faceted Search** with language and page rank filters
-- **Content Deduplication** using SHA-256 hashing
-- **Page Rank Calculation** based on link analysis
+### Search
+- Full-text search with Elasticsearch (BM25 ranking)
+- Web crawler with robots.txt compliance
+- NLP keyword extraction and content analysis
+- Real-time autocomplete
+- Language and ranking filters
+- Content deduplication (SHA-256)
+- Page rank calculation
 
 ### Infrastructure
-- **Distributed Crawling** with RabbitMQ message queues
-- **High-Performance Caching** using Redis and Caffeine
-- **Connection Pooling** with HikariCP for optimal database performance
-- **Async Processing** with configurable thread pools
-- **Database Migrations** managed by Flyway
+- Distributed crawling with RabbitMQ
+- Redis + Caffeine caching
+- HikariCP connection pooling
+- Async processing
+- Flyway database migrations
 
 ### Security & API
-- **JWT Authentication** for secure API access
-- **Role-Based Access Control** (RBAC)
-- **API Rate Limiting** to prevent abuse
-- **RESTful API** with comprehensive Swagger documentation
-- **CORS Configuration** for cross-origin requests
+- JWT authentication
+- Role-based access control
+- Rate limiting
+- RESTful API with Swagger docs
+- CORS support
 
-### Monitoring & Observability
-- **Health Checks** for all services (MySQL, Elasticsearch, Redis, RabbitMQ)
-- **Prometheus Metrics** export
-- **Structured Logging** with SLF4J/Logback
-- **Search Analytics** tracking
+### Monitoring
+- Health checks (MySQL, Elasticsearch, Redis, RabbitMQ)
+- Prometheus metrics
+- Structured logging
+- Search analytics
 
-### User Interface
-- **Modern Responsive Design** with dark theme
-- **Real-time Search** with instant results
-- **Autocomplete Suggestions** as you type
-- **Advanced Filters** for refined searching
-- **Mobile-Friendly** interface
+### UI
+- Responsive design
+- Real-time search
+- Autocomplete
+- Mobile-friendly
 
 ## 🏗️ Architecture
 
@@ -267,26 +261,15 @@ JWT_SECRET=your-secret-key
 4. Push to the branch
 5. Create a Pull Request
 
-## 📝 License
+## License
 
-This project is open source and available under the MIT License.
+MIT License - feel free to use this project however you want.
 
-## 👥 Authors
+## Author
 
-- **Annkit** - [GitHub](https://github.com/Annkit-rgb)
+Annkit - [GitHub](https://github.com/Annkit-rgb)
 
-## 🙏 Acknowledgments
+## Support
 
-- Spring Boot team for the excellent framework
-- Elasticsearch for powerful search capabilities
-- All open-source contributors
-
-## 📞 Support
-
-For issues and questions:
-- Open an issue on GitHub
-- Check the API documentation at `/swagger-ui.html`
-
----
-
-**Made with ❤️ using Spring Boot, Elasticsearch, and modern web technologies**
+- Open an issue if you find bugs
+- Check `/swagger-ui.html` for API docs
