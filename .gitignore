@@ -31,3 +31,19 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Log files ###
+logs/
+*.log
+*.log.*
+*.gz
+
+### Build output files ###
+*_log.txt
+*_error.txt
+*_output.txt
+startup_*.txt
+compilation_errors.txt
+error_snippet.txt
+full_*.txt
+final_reboot*.txt
