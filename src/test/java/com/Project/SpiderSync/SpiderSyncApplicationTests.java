@@ -8,6 +8,7 @@ class SpiderSyncApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// This test ensures the application context loads successfully
 	}
 
 }

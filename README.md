@@ -1,6 +1,34 @@
 # 🕷️ SpiderSync - Professional High-End Search Engine
 
+[![CI/CD Pipeline](https://github.com/Annkit-rgb/SpiderSync/actions/workflows/ci.yml/badge.svg)](https://github.com/Annkit-rgb/SpiderSync/actions/workflows/ci.yml)
+[![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.1-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A professional, enterprise-grade web search engine built with Spring Boot, Elasticsearch, Redis, and RabbitMQ. SpiderSync features advanced web crawling, full-text search with BM25 ranking, NLP-powered keyword extraction, and a modern responsive UI.
+
+## 📸 Screenshots
+
+### Homepage
+![SpiderSync Homepage](screenshots/homepage.png)
+*Clean, Google-like interface with quick link navigation*
+
+### Search Results
+![Search Results](screenshots/search_results.png)
+*Real-time search with fallback to MySQL when Elasticsearch is unavailable*
+
+### API Documentation
+![Swagger API Docs](screenshots/api_docs.png)
+*Comprehensive RESTful API with Swagger UI documentation*
+
+### Health Monitoring
+![Health Metrics](screenshots/health_metrics.png)
+*Spring Actuator health checks showing system status*
+
+### Search Demo
+![Search Demo](screenshots/search_demo.webp)
+*Interactive search demonstration*
 
 ## ✨ Features
 
